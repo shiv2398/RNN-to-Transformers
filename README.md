@@ -3,7 +3,7 @@ A simple RNN has one input layer, one hidden layer, and one output layer. The in
 
 The equations for a simple RNN are:
 
-Hidden state: $ s_t = f(Ux_t + Ws_{t-1} + b) $ 
+Hidden state: $ s_t = f(Ux_t + Ws_{t-1} + b) $
 Output state: $ y_t = g(Vs_t + c) $
 where s_t is the hidden state at time t, x_t is the input at time t, y_t is the output at time t, U, W, and V are weight matrices, b and c are bias vectors, f is an activation function applied element-wise, and g is a softmax function applied element-wise.
 
