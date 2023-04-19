@@ -3,14 +3,14 @@ A simple RNN has one input layer, one hidden layer, and one output layer. The in
 
 The equations for a simple RNN are:
 
-Hidden state: s_t = f(Ux_t + Ws_{t-1} + b)
-Output state: y_t = g(Vs_t + c)
+Hidden state: $ s_t = f(Ux_t + Ws_{t-1} + b) $ 
+Output state: $ y_t = g(Vs_t + c) $
 where s_t is the hidden state at time t, x_t is the input at time t, y_t is the output at time t, U, W, and V are weight matrices, b and c are bias vectors, f is an activation function applied element-wise, and g is a softmax function applied element-wise.
 
 The RNN_net class in your code implements a simple RNN with one input layer, one hidden layer, and one output layer. The equations for this RNN are:
 
-Hidden state: s_i = sigma(Ux_i + Ws_{i-1} + b)
-Output state: y_i= O(Vs_i + c)
+Hidden state: $ s_i = sigma(Ux_i + Ws_{i-1} + b) $
+Output state: $ y_i= O(Vs_i + c) $
 where s_i is the hidden state at time i, x_i is the input at time i, y_i is the output at time i, U, W, and V are weight matrices, b and c are bias vectors, and sigma is a non-linear activation function.
 
 Now let's see how the RNN_net class works.
