@@ -24,10 +24,10 @@ The init_hidden function initializes the previous hidden state to a tensor of ze
 
 
 
-## Encoder-Decoder Inference
+##Encoder-Decoder Inference
 
-- Encoder input : `torch.Size([6, 1, 27])`
-    ```the size is (6, 1, 27), which means that the tensor has 3 dimensions:
+# Encoder input : `torch.Size([6, 1, 27])`
+the size is (6, 1, 27), which means that the tensor has 3 dimensions:
     The first dimension has size 6, which likely corresponds to the sequence length or the number of time steps in the input.
     The second dimension has size 1, which likely corresponds to the batch size.
     The third dimension has size 27, which could correspond to the number of features in each input element, or the size of the input vocabulary if the       input is composed of one-hot encoded vectors.```
@@ -73,7 +73,7 @@ The init_hidden function initializes the previous hidden state to a tensor of ze
     The third dimension has size 256, which corresponds to the hidden size of the decoder. This means that the decoder intermediate output is a vector of length 256, which represents the hidden state of the decoder at the current time step.
     In other words, the decoder intermediate output is the output of the decoder at a particular time step, after processing the decoder input and the decoder state. This output is used to generate the next element in the output sequence. Note that because the decoder intermediate output is a vector of fixed length (256 in this case), it can be thought of as a bottleneck that compresses the information in the decoder input and the decoder state into a smaller representation that can be used to generate the next output element.```
 - Decoder output ```torch.Size([1, 1, 129])```
-    ```the size is (1, 1, 129), which means that the tensor has 3 dimensions:
+ the size is (1, 1, 129), which means that the tensor has 3 dimensions:
     The first dimension has size 1, which corresponds to the sequence length or the number of time steps in the output. In this case, it seems that the decoder output has only one time step.
     The second dimension has size 1, which corresponds to the batch size. In this case, the output seems to correspond to a batch of size 1.
     The third dimension has size 129, which corresponds to the size of the vocabulary or the number of possible output elements that the decoder can generate. This means that the decoder output is a vector of length 129, where each element represents the probability of generating a particular output element (e.g., a particular word in a sequence) at the current time step.
