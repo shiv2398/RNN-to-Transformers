@@ -26,8 +26,8 @@ The init_hidden function initializes the previous hidden state to a tensor of ze
 
 ##Encoder-Decoder Inference
 
-# Encoder input : `torch.Size([6, 1, 27])`
-the size is (6, 1, 27), which means that the tensor has 3 dimensions:
+- Encoder input : `torch.Size([6, 1, 27])`
+    ```the size is (6, 1, 27), which means that the tensor has 3 dimensions:
     The first dimension has size 6, which likely corresponds to the sequence length or the number of time steps in the input.
     The second dimension has size 1, which likely corresponds to the batch size.
     The third dimension has size 27, which could correspond to the number of features in each input element, or the size of the input vocabulary if the       input is composed of one-hot encoded vectors.```
